@@ -302,6 +302,23 @@ ul {
     }
 }
 
+/* === Nav Facebook Icon === */
+.nav-fb {
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+    opacity: 0.8;
+}
+
+.nav-fb:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.nav-fb::after {
+    display: none !important;
+}
+
 /* === Nav CTA Button === */
 .nav-cta {
     background: var(--sa-green);
