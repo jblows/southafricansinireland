@@ -32,130 +32,18 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <div class="hero-banner-img"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <p class="hero-greeting">Welkom! Fáilte! Welcome!</p>
+            <p class="hero-greeting">Welkom! F&aacute;ilte! Welcome!</p>
             <h1>South Africans in Ireland</h1>
             <p class="hero-tagline">Connecting the Rainbow Nation across the Emerald Isle</p>
             <div class="hero-buttons">
                 <a href="members.html" class="btn btn-primary">Become a Member</a>
+                <a href="#events" class="btn btn-secondary">Upcoming Events</a>
                 <a href="#resources" class="btn btn-secondary">New to Ireland?</a>
             </div>
         </div>
-
-        <!-- Animated Mascots -->
-        <div class="mascots-container">
-            <div class="mascot mascot-springbok">
-                <svg viewBox="0 0 200 200" class="mascot-svg">
-                    <!-- Springbok in SA flag colours -->
-                    <g class="springbok-body">
-                        <!-- Body -->
-                        <ellipse cx="100" cy="120" rx="45" ry="30" fill="#007749"/>
-                        <!-- Legs -->
-                        <rect x="70" y="140" width="8" height="35" rx="4" fill="#FFB81C"/>
-                        <rect x="85" y="142" width="8" height="33" rx="4" fill="#FFB81C"/>
-                        <rect x="107" y="142" width="8" height="33" rx="4" fill="#FFB81C"/>
-                        <rect x="122" y="140" width="8" height="35" rx="4" fill="#FFB81C"/>
-                        <!-- Hooves -->
-                        <ellipse cx="74" cy="177" rx="6" ry="4" fill="#002395"/>
-                        <ellipse cx="89" cy="177" rx="6" ry="4" fill="#002395"/>
-                        <ellipse cx="111" cy="177" rx="6" ry="4" fill="#002395"/>
-                        <ellipse cx="126" cy="177" rx="6" ry="4" fill="#002395"/>
-                        <!-- Neck -->
-                        <path d="M130,110 Q145,90 140,70" stroke="#007749" stroke-width="16" fill="none" stroke-linecap="round"/>
-                        <!-- Head -->
-                        <ellipse cx="145" cy="65" rx="18" ry="14" fill="#FFB81C"/>
-                        <!-- Snout -->
-                        <ellipse cx="160" cy="68" rx="10" ry="8" fill="#DE3831"/>
-                        <!-- Eye -->
-                        <circle cx="148" cy="60" r="4" fill="white"/>
-                        <circle cx="149" cy="60" r="2" fill="#002395"/>
-                        <!-- Horns -->
-                        <path d="M140,52 Q135,35 145,25" stroke="#002395" stroke-width="4" fill="none" stroke-linecap="round"/>
-                        <path d="M150,52 Q155,35 150,25" stroke="#002395" stroke-width="4" fill="none" stroke-linecap="round"/>
-                        <!-- SA flag stripe on body -->
-                        <path d="M60,120 L140,120" stroke="#FFB81C" stroke-width="6" opacity="0.6"/>
-                        <path d="M65,130 L135,130" stroke="#DE3831" stroke-width="4" opacity="0.5"/>
-                        <!-- Tail -->
-                        <path d="M55,115 Q40,105 35,110" stroke="#007749" stroke-width="5" fill="none" stroke-linecap="round"/>
-                    </g>
-                    <!-- Champion star -->
-                    <text x="90" y="115" font-size="16" fill="#FFB81C" opacity="0.8">&#9733;</text>
-                </svg>
-            </div>
-
-            <!-- Fire Animation -->
-            <div class="fire-container">
-                <svg viewBox="0 0 100 150" class="fire-svg">
-                    <defs>
-                        <filter id="fire-blur">
-                            <feGaussianBlur stdDeviation="2"/>
-                        </filter>
-                    </defs>
-                    <!-- Outer flame (SA Gold) -->
-                    <path class="flame flame-outer" d="M50,140 C20,100 10,70 25,45 C35,25 45,30 50,10 C55,30 65,25 75,45 C90,70 80,100 50,140 Z" fill="#FFB81C" opacity="0.7" filter="url(#fire-blur)"/>
-                    <!-- Middle flame (Irish Orange) -->
-                    <path class="flame flame-middle" d="M50,140 C28,108 22,80 35,55 C42,40 48,45 50,25 C52,45 58,40 65,55 C78,80 72,108 50,140 Z" fill="#FF883E" opacity="0.8"/>
-                    <!-- Inner flame (SA Red) -->
-                    <path class="flame flame-inner" d="M50,140 C35,115 32,90 40,70 C45,58 48,62 50,45 C52,62 55,58 60,70 C68,90 65,115 50,140 Z" fill="#DE3831" opacity="0.9"/>
-                    <!-- Core (white/yellow) -->
-                    <path class="flame flame-core" d="M50,140 C42,125 40,110 45,95 C47,88 49,90 50,80 C51,90 53,88 55,95 C60,110 58,125 50,140 Z" fill="#FFF5CC"/>
-                    <!-- Embers -->
-                    <circle class="ember ember-1" cx="35" cy="60" r="3" fill="#FFB81C"/>
-                    <circle class="ember ember-2" cx="65" cy="50" r="2" fill="#FF883E"/>
-                    <circle class="ember ember-3" cx="45" cy="40" r="2.5" fill="#DE3831"/>
-                    <circle class="ember ember-4" cx="58" cy="35" r="1.5" fill="#FFB81C"/>
-                </svg>
-            </div>
-
-            <div class="mascot mascot-leprechaun">
-                <svg viewBox="0 0 200 200" class="mascot-svg">
-                    <!-- Leprechaun in Irish flag colours -->
-                    <g class="leprechaun-body">
-                        <!-- Body (green coat) -->
-                        <path d="M70,110 Q100,95 130,110 L125,170 Q100,175 75,170 Z" fill="#169B62"/>
-                        <!-- Belt -->
-                        <rect x="75" y="135" width="50" height="8" rx="4" fill="#1a1a2e"/>
-                        <rect x="95" y="133" width="12" height="12" rx="2" fill="#FFB81C"/>
-                        <!-- Legs -->
-                        <rect x="82" y="165" width="10" height="25" rx="5" fill="#FFFFFF"/>
-                        <rect x="108" y="165" width="10" height="25" rx="5" fill="#FF883E"/>
-                        <!-- Shoes (curled) -->
-                        <path d="M78,188 Q82,195 95,192" fill="#169B62" stroke="#169B62" stroke-width="3"/>
-                        <path d="M105,188 Q110,195 122,192" fill="#FF883E" stroke="#FF883E" stroke-width="3"/>
-                        <!-- Arms -->
-                        <path d="M70,115 Q55,130 60,145" stroke="#169B62" stroke-width="12" fill="none" stroke-linecap="round"/>
-                        <path d="M130,115 Q145,130 140,145" stroke="#169B62" stroke-width="12" fill="none" stroke-linecap="round"/>
-                        <!-- Hands -->
-                        <circle cx="60" cy="147" r="8" fill="#FFDAB9"/>
-                        <circle cx="140" cy="147" r="8" fill="#FFDAB9"/>
-                        <!-- Head -->
-                        <circle cx="100" cy="80" r="25" fill="#FFDAB9"/>
-                        <!-- Beard (orange like Irish flag) -->
-                        <path d="M80,88 Q100,115 120,88" fill="#FF883E"/>
-                        <!-- Eyes -->
-                        <circle cx="92" cy="75" r="4" fill="white"/>
-                        <circle cx="108" cy="75" r="4" fill="white"/>
-                        <circle cx="93" cy="75" r="2" fill="#169B62"/>
-                        <circle cx="109" cy="75" r="2" fill="#169B62"/>
-                        <!-- Smile -->
-                        <path d="M92,87 Q100,93 108,87" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
-                        <!-- Hat -->
-                        <rect x="78" y="50" width="44" height="25" rx="5" fill="#169B62"/>
-                        <rect x="72" y="55" width="56" height="6" rx="3" fill="#1a1a2e"/>
-                        <!-- Hat buckle -->
-                        <rect x="94" y="52" width="12" height="8" rx="2" fill="#FFB81C"/>
-                        <!-- Hat top -->
-                        <rect x="82" y="35" width="36" height="18" rx="4" fill="#169B62"/>
-                        <!-- Shamrock on hat -->
-                        <circle cx="100" cy="42" r="3" fill="#FFFFFF" opacity="0.8"/>
-                        <circle cx="96" cy="39" r="2.5" fill="#FFFFFF" opacity="0.8"/>
-                        <circle cx="104" cy="39" r="2.5" fill="#FFFFFF" opacity="0.8"/>
-                    </g>
-                </svg>
-            </div>
-        </div>
-
         <div class="hero-flags">
             <div class="flag-stripe sa-green"></div>
             <div class="flag-stripe sa-gold"></div>

@@ -155,20 +155,22 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #001a0d 0%, #003320 30%, #1a3a2a 60%, #2d1810 100%);
     overflow: hidden;
+    background: #001a0d;
+}
+
+.hero-banner-img {
+    position: absolute;
+    inset: 0;
+    background: url('hero-banner.jpg') center/cover no-repeat;
+    z-index: 0;
 }
 
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,184,28,0.05)" stroke-width="0.5"/><circle cx="50" cy="50" r="30" fill="none" stroke="rgba(255,184,28,0.03)" stroke-width="0.5"/><circle cx="50" cy="50" r="20" fill="none" stroke="rgba(255,184,28,0.02)" stroke-width="0.5"/></svg>') center/cover;
-    animation: rotate 60s linear infinite;
-}
-
-@keyframes rotate {
-    from { transform: rotate(0deg) scale(3); }
-    to { transform: rotate(360deg) scale(3); }
+    background: linear-gradient(to bottom, rgba(0,26,13,0.55) 0%, rgba(0,51,32,0.65) 50%, rgba(0,26,13,0.8) 100%);
+    z-index: 1;
 }
 
 .hero-content {
