@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  <!-- South African flag side (left heart half) -->
+  <defs>
+    <clipPath id="left-heart">
+      <path d="M80,68 C80,68 40,50 25,35 C10,20 10,5 25,5 C35,5 40,12 40,12 C40,12 45,5 55,5 C70,5 70,20 55,35 C48,42 40,50 40,55 Z"/>
+    </clipPath>
+    <clipPath id="right-heart">
+      <path d="M80,68 C80,68 120,50 135,35 C150,20 150,5 135,5 C125,5 120,12 120,12 C120,12 115,5 105,5 C90,5 90,20 105,35 C112,42 120,50 120,55 Z"/>
+    </clipPath>
+    <clipPath id="full-heart">
+      <path d="M80,70 C80,70 35,45 22,30 C9,15 12,2 27,2 C37,2 42,8 45,12 C48,8 53,2 63,2 C73,2 80,8 80,18 C80,8 87,2 97,2 C107,2 112,8 115,12 C118,8 123,2 133,2 C148,2 151,15 138,30 C125,45 80,70 80,70 Z"/>
+    </clipPath>
+    <linearGradient id="sa-flag" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DE3831"/>
+      <stop offset="20%" stop-color="#DE3831"/>
+      <stop offset="20%" stop-color="#FFFFFF"/>
+      <stop offset="27%" stop-color="#FFFFFF"/>
+      <stop offset="27%" stop-color="#007749"/>
+      <stop offset="50%" stop-color="#007749"/>
+      <stop offset="50%" stop-color="#FFB81C"/>
+      <stop offset="60%" stop-color="#FFB81C"/>
+      <stop offset="60%" stop-color="#FFFFFF"/>
+      <stop offset="67%" stop-color="#FFFFFF"/>
+      <stop offset="67%" stop-color="#002395"/>
+      <stop offset="100%" stop-color="#002395"/>
+    </linearGradient>
+    <linearGradient id="ie-flag" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#169B62"/>
+      <stop offset="33%" stop-color="#169B62"/>
+      <stop offset="33%" stop-color="#FFFFFF"/>
+      <stop offset="66%" stop-color="#FFFFFF"/>
+      <stop offset="66%" stop-color="#FF883E"/>
+      <stop offset="100%" stop-color="#FF883E"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Heart shape with combined flags -->
+  <g filter="url(#shadow)">
+    <!-- Left half - SA flag -->
+    <path d="M56,65 C56,65 18,42 10,28 C2,14 8,4 20,4 C28,4 33,9 36,13 C39,9 44,4 52,4 C56,4 58,6 58,10 L58,65 Z" fill="url(#sa-flag)"/>
+    <!-- SA Y-shape overlay -->
+    <path d="M10,28 L30,36 L36,13 M30,36 L56,65" stroke="#007749" stroke-width="4" fill="none" opacity="0.3"/>
+
+    <!-- Right half - Irish flag -->
+    <path d="M58,65 C58,65 96,42 104,28 C112,14 106,4 94,4 C86,4 81,9 78,13 C75,9 70,4 62,4 C58,4 56,6 56,10 L56,65 Z" fill="url(#ie-flag)"/>
+  </g>
+
+  <!-- Connecting center line -->
+  <line x1="57" y1="4" x2="57" y2="65" stroke="white" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Text -->
+  <text x="125" y="32" font-family="Poppins, sans-serif" font-size="15" font-weight="700" fill="#1a1a2e">
+    <tspan>South </tspan><tspan fill="#007749">Africans</tspan>
+  </text>
+  <text x="125" y="54" font-family="Poppins, sans-serif" font-size="15" font-weight="700" fill="#1a1a2e">
+    <tspan>in </tspan><tspan fill="#FF883E">Ireland</tspan>
+  </text>
+</svg>
