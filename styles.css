@@ -555,6 +555,12 @@ ul {
     gap: 24px;
 }
 
+a.forum-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .forum-card {
     background: white;
     border-radius: var(--radius);
