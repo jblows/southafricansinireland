@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Forum | South Africans in Ireland</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .forum-hero { background: linear-gradient(135deg, #001a0d, #003320); padding: 140px 0 60px; color: white; text-align: center; }
+        .forum-hero h1 { font-size: 2.5rem; margin-bottom: 12px; }
+        .forum-hero p { opacity: 0.8; font-size: 1.1rem; }
+        .forum-page { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
+        .forum-category { background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 24px; overflow: hidden; }
+        .forum-category-header { display: flex; align-items: center; gap: 16px; padding: 24px 30px; border-bottom: 1px solid #f0f0f0; cursor: pointer; transition: background 0.3s; }
+        .forum-category-header:hover { background: #f8faf9; }
+        .forum-category-icon { font-size: 1.8rem; }
+        .forum-category-info { flex: 1; }
+        .forum-category-info h3 { font-size: 1.1rem; margin-bottom: 4px; }
+        .forum-category-info p { font-size: 0.9rem; color: #555; margin: 0; }
+        .forum-category-stats { text-align: right; }
+        .forum-category-stats span { display: block; font-size: 0.85rem; color: #555; }
+        .forum-category-stats strong { color: #007749; }
+        .forum-topics { padding: 0; }
+        .forum-topic { display: flex; align-items: center; padding: 16px 30px; border-bottom: 1px solid #f5f5f5; transition: background 0.2s; }
+        .forum-topic:hover { background: #fafafa; }
+        .forum-topic:last-child { border-bottom: none; }
+        .forum-topic-title { flex: 1; }
+        .forum-topic-title h4 { font-size: 0.95rem; font-weight: 500; margin-bottom: 2px; color: #1a1a2e; }
+        .forum-topic-title span { font-size: 0.8rem; color: #888; }
+        .forum-topic-replies { text-align: right; font-size: 0.85rem; color: #555; }
+        .forum-topic-replies strong { color: #007749; }
+        .forum-join { text-align: center; margin-top: 50px; padding: 40px; background: #f0faf5; border-radius: 12px; }
+        .forum-join h2 { font-size: 1.5rem; margin-bottom: 12px; }
+        .forum-join p { color: #555; margin-bottom: 20px; }
+        .back-link { display: inline-block; margin-bottom: 30px; color: #007749; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo"><img src="../logo.svg" alt="South Africans in Ireland" class="nav-logo-img"></a>
+            <ul class="nav-menu">
+                <li><a href="../index.html#events" class="nav-link">Events</a></li>
+                <li><a href="../index.html#resources" class="nav-link">Resources</a></li>
+                <li><a href="../index.html#directory" class="nav-link">Directory</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="forum-hero">
+        <h1>Community Forum</h1>
+        <p>Ask questions, share experiences, help each other out</p>
+    </section>
+
+    <div class="forum-page">
+        <a href="../index.html" class="back-link">&larr; Back to Home</a>
+
+        <!-- General Chat -->
+        <div class="forum-category">
+            <div class="forum-category-header">
+                <span class="forum-category-icon">&#x1F4AC;</span>
+                <div class="forum-category-info">
+                    <h3>General Chat</h3>
+                    <p>Anything and everything. From weather complaints to rugby debates.</p>
+                </div>
+                <div class="forum-category-stats">
+                    <span><strong>234</strong> topics</span>
+                    <span><strong>1,892</strong> replies</span>
+                </div>
+            </div>
+            <div class="forum-topics">
+                <div class="forum-topic">
+                    <div class="forum-topic-title">
+                        <h4>Best place to watch the Currie Cup final this weekend?</h4>
+                        <span>Posted by JannieVdB - 2 hours ago</span>
+                    </div>
+                    <div class="forum-topic-replies"><strong>12</strong> replies</div>
+                </div>
+                <div class="forum-topic">
+                    <div class="forum-topic-title">
+                        <h4>Anyone else miss Woolworths food more than anything?</h4>
+                        <span>Posted by CapeGirl_IE - Yesterday</span>
+                    </div>
+                    <div class="forum-topic-replies"><strong>45</strong> replies</div>
+                </div>
+                <div class="forum-topic">
+                    <div class="forum-topic-title">
+                        <h4>Irish people trying to say "lekker" - share your stories</h4>
+                        <span>Posted by BraaiBoss - 3 days ago</span>
+                    </div>
+                    <div class="forum-topic-replies"><strong>38</strong> replies</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Arrivals -->
+        <div class="forum-category">
+            <div class="forum-category-header">
+                <span class="forum-category-icon">&#x2708;</span>
+                <div class="forum-category-info">
+                    <h3>New Arrivals</h3>
+                    <p>Just landed or planning your move? Ask anything here.</p>
+                </div>
+                <div class="forum-category-stats">
+                    <span><strong>156</strong> topics</span>
+                    <span><strong>1,203</strong> replies</span>
+                </div>
+            </div>
+            <div class="forum-topics">
+                <div class="forum-topic">
+                    <div class="forum-topic-title">
+                        <h4>Arriving next month - what do I do in the first week?</h4>
+                        <span>Posted by MovingToIE - 5 hours ago</span>
+                    </div>
+                    <div class="forum-topic-replies"><strong>23</strong> replies</div>
+                </div>
+                <div class="forum-topic">
+                    <div class="forum-topic-title">
+                        <h4>Critical Skills Permit timeline - how long did yours take?</h4>
+                        <span>Posted by SADev2026 - Yesterday</span>
+                    </div>
+                    <div class="forum-topic-replies"><strong>18</strong> replies</div>
+                </div>
+                <div class="forum-topic">
+                    <div class="forum-topic-title">
+                        <h4>What to pack vs what to buy here?</h4>
+                        <span>Posted by PretoriaToPortlaoise - 4 days ago</span>
+                    </div>
+                    <div class="forum-topic-replies"><strong>31</strong> replies</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Jobs & Networking -->
+        <div class="forum-category">
+            <div class="forum-category-header">
+                <span class="forum-category-icon">&#x1F3E2;</span>
+                <div class="forum-category-info">
+                    <h3>Jobs & Networking</h3>
+                    <p>Job postings, career advice, and professional connections.</p>
+                </div>
+                <div class="forum-category-stats">
+                    <span><strong>89</strong> topics</span>
+                    <span><strong>654</strong> replies</span>
+                </div>
+            </div>
+            <div class="forum-topics">
+                <div class="forum-topic">
+                    <div class="forum-topic-title">
+                        <h4>Hiring: Senior Software Engineer - fintech startup, Dublin</h4>
+                        <span>Posted by TechRecruiterIE - 1 day ago</span>
+                    </div>
+                    <div class="forum-topic-replies"><strong>5</strong> replies</div>
+                </div>
+                <div class="forum-topic">
+                    <div class="forum-topic-title">
+                        <h4>How to get SA engineering qualification recognised here?</h4>
+                        <span>Posted by EngSA - 3 days ago</span>
+                    </div>
+                    <div class="forum-topic-replies"><strong>14</strong> replies</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Housing -->
+        <div class="forum-category">
+            <div class="forum-category-header">
+                <span class="forum-category-icon">&#x1F3E0;</span>
+                <div class="forum-category-info">
+                    <h3>Housing & Accommodation</h3>
+                    <p>Room shares, flat hunting tips, and area reviews.</p>
+                </div>
+                <div class="forum-category-stats">
+                    <span><strong>312</strong> topics</span>
+                    <span><strong>2,456</strong> replies</span>
+                </div>
+            </div>
+            <div class="forum-topics">
+                <div class="forum-topic">
+                    <div class="forum-topic-title">
+                        <h4>Room available in Sandyford house share - Aug 1st</h4>
+                        <span>Posted by DublinSA - 6 hours ago</span>
+                    </div>
+                    <div class="forum-topic-replies"><strong>8</strong> replies</div>
+                </div>
+                <div class="forum-topic">
+                    <div class="forum-topic-title">
+                        <h4>Maynooth vs Celbridge for families - pros and cons?</h4>
+                        <span>Posted by SAFamily2026 - 2 days ago</span>
+                    </div>
+                    <div class="forum-topic-replies"><strong>27</strong> replies</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Buy & Sell -->
+        <div class="forum-category">
+            <div class="forum-category-header">
+                <span class="forum-category-icon">&#x1F6D2;</span>
+                <div class="forum-category-info">
+                    <h3>Buy & Sell</h3>
+                    <p>Classifieds within the community. Furniture, cars, and more.</p>
+                </div>
+                <div class="forum-category-stats">
+                    <span><strong>67</strong> topics</span>
+                    <span><strong>234</strong> replies</span>
+                </div>
+            </div>
+            <div class="forum-topics">
+                <div class="forum-topic">
+                    <div class="forum-topic-title">
+                        <h4>Selling: Weber braai, barely used - &euro;120 ONO (Dublin 16)</h4>
+                        <span>Posted by MovingCork - 1 day ago</span>
+                    </div>
+                    <div class="forum-topic-replies"><strong>4</strong> replies</div>
+                </div>
+                <div class="forum-topic">
+                    <div class="forum-topic-title">
+                        <h4>2019 VW Golf - selling as we're getting a bigger car</h4>
+                        <span>Posted by GrowingFamily - 5 days ago</span>
+                    </div>
+                    <div class="forum-topic-replies"><strong>9</strong> replies</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sport & Social -->
+        <div class="forum-category">
+            <div class="forum-category-header">
+                <span class="forum-category-icon">&#x1F3C9;</span>
+                <div class="forum-category-info">
+                    <h3>Sport & Social</h3>
+                    <p>Rugby, cricket, running clubs, and social events.</p>
+                </div>
+                <div class="forum-category-stats">
+                    <span><strong>145</strong> topics</span>
+                    <span><strong>987</strong> replies</span>
+                </div>
+            </div>
+            <div class="forum-topics">
+                <div class="forum-topic">
+                    <div class="forum-topic-title">
+                        <h4>SA cricket team looking for players - Dublin area</h4>
+                        <span>Posted by CricketZA - 3 days ago</span>
+                    </div>
+                    <div class="forum-topic-replies"><strong>11</strong> replies</div>
+                </div>
+                <div class="forum-topic">
+                    <div class="forum-topic-title">
+                        <h4>Parkrun crew - who's joining Saturday morning in Phoenix Park?</h4>
+                        <span>Posted by RunnerMom - 4 days ago</span>
+                    </div>
+                    <div class="forum-topic-replies"><strong>16</strong> replies</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="forum-join">
+            <h2>Want to join the conversation?</h2>
+            <p>Sign up to post topics, reply to discussions, and connect with the community.</p>
+            <a href="#" class="btn btn-primary" onclick="alert('Forum registration coming soon! For now, join our WhatsApp group.'); return false;">Sign Up Free</a>
+            <p style="margin-top: 12px; font-size: 0.9rem; color: #888; font-style: italic;">Be lekker to each other.</p>
+        </div>
+    </div>
+</body>
+</html>

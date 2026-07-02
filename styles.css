@@ -880,3 +880,99 @@ ul {
 .directory-card.hidden {
     display: none;
 }
+
+/* === RSVP Modal === */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal {
+    background: white;
+    border-radius: var(--radius);
+    padding: 40px;
+    max-width: 450px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: modalIn 0.3s ease;
+}
+
+@keyframes modalIn {
+    from { transform: scale(0.9) translateY(20px); opacity: 0; }
+    to { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+.modal-close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--text-light);
+    line-height: 1;
+    transition: var(--transition);
+}
+
+.modal-close:hover {
+    color: var(--sa-red);
+}
+
+.modal h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+}
+
+.modal-event-name {
+    font-size: 1rem;
+    color: var(--sa-green);
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.modal-form .form-group {
+    margin-bottom: 16px;
+}
+
+.modal-form input,
+.modal-form select {
+    width: 100%;
+    padding: 14px 20px;
+    border: 2px solid #e8e8e8;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: var(--transition);
+    outline: none;
+}
+
+.modal-form input:focus,
+.modal-form select:focus {
+    border-color: var(--sa-green);
+}
+
+.modal-form .btn {
+    width: 100%;
+    margin-top: 8px;
+}
+
+/* === RSVP Button Style === */
+.rsvp-btn {
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+}
