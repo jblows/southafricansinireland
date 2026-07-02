@@ -235,6 +235,31 @@ ul {
 .ie-white { background: var(--ie-white); }
 .ie-orange { background: var(--ie-orange); }
 
+/* === Rugby Banner === */
+.rugby-banner-section {
+    background: #0a1f12;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.rugby-banner-img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.rugby-banner-cta {
+    margin-top: 20px;
+}
+
+.rugby-banner-cta p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 /* === Nav CTA Button === */
 .nav-cta {
     background: var(--sa-green);
