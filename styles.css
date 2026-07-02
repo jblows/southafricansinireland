@@ -186,6 +186,21 @@ ul {
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
+.hero-greeting {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-weight: 300;
+    margin-bottom: 8px;
+    opacity: 0.8;
+    letter-spacing: 2px;
+}
+
+.hero-tagline {
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    font-weight: 300;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
 .hero-content p {
     font-size: clamp(1rem, 2.5vw, 1.4rem);
     font-weight: 300;
@@ -217,6 +232,151 @@ ul {
 .sa-gold { background: var(--sa-gold); }
 .ie-white { background: var(--ie-white); }
 .ie-orange { background: var(--ie-orange); }
+
+/* === Nav CTA Button === */
+.nav-cta {
+    background: var(--sa-green);
+    color: white !important;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600 !important;
+}
+
+.nav-cta:hover {
+    background: #005c3a;
+}
+
+.nav-cta::after {
+    display: none !important;
+}
+
+/* === Mascots & Fire Animation === */
+.mascots-container {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: flex-end;
+    gap: 0;
+    z-index: 3;
+    opacity: 0.85;
+}
+
+.mascot {
+    width: 120px;
+    height: 120px;
+}
+
+.mascot-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.mascot-springbok {
+    animation: springbok-bounce 3s ease-in-out infinite;
+}
+
+.mascot-leprechaun {
+    animation: leprechaun-dance 2.5s ease-in-out infinite;
+}
+
+@keyframes springbok-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+@keyframes leprechaun-dance {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-5px) rotate(2deg); }
+    75% { transform: translateY(-5px) rotate(-2deg); }
+}
+
+.fire-container {
+    width: 80px;
+    height: 100px;
+    margin: 0 -10px;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+.fire-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.flame-outer {
+    animation: flame-flicker 1.5s ease-in-out infinite alternate;
+    transform-origin: bottom center;
+}
+
+.flame-middle {
+    animation: flame-flicker 1.2s ease-in-out infinite alternate-reverse;
+    transform-origin: bottom center;
+}
+
+.flame-inner {
+    animation: flame-flicker 1s ease-in-out infinite alternate;
+    transform-origin: bottom center;
+}
+
+.flame-core {
+    animation: flame-flicker 0.8s ease-in-out infinite alternate-reverse;
+    transform-origin: bottom center;
+}
+
+@keyframes flame-flicker {
+    0% { transform: scaleX(1) scaleY(1); opacity: 0.7; }
+    50% { transform: scaleX(1.05) scaleY(1.08); opacity: 0.9; }
+    100% { transform: scaleX(0.95) scaleY(1.03); opacity: 0.8; }
+}
+
+.ember {
+    animation: ember-float 2s ease-in-out infinite;
+}
+
+.ember-1 { animation-delay: 0s; }
+.ember-2 { animation-delay: 0.5s; }
+.ember-3 { animation-delay: 1s; }
+.ember-4 { animation-delay: 1.5s; }
+
+@keyframes ember-float {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    50% { transform: translateY(-15px) scale(0.7); opacity: 0.6; }
+    100% { transform: translateY(-30px) scale(0.3); opacity: 0; }
+}
+
+/* === Chapters === */
+.chapters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.chapter-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--ie-orange);
+    transition: var(--transition);
+}
+
+.chapter-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+}
+
+.chapter-card strong {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--text-dark);
+}
+
+.chapter-card span {
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
 
 /* === Buttons === */
 .btn {
@@ -830,6 +990,11 @@ a.forum-card {
 
     .section-title {
         font-size: 2rem;
+    }
+
+    .mascots-container {
+        bottom: 20px;
+        transform: translateX(-50%) scale(0.7);
     }
 
     .event-card {
