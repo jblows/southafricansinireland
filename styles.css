@@ -1,21 +1,23 @@
 /* === Variables === */
 :root {
-    --sa-green: #007749;
-    --sa-gold: #FFB81C;
+    --sa-green: #1B5E20;
+    --sa-gold: #F5A623;
     --sa-red: #DE3831;
     --sa-blue: #002395;
     --sa-black: #000000;
     --ie-green: #169B62;
     --ie-orange: #FF883E;
     --ie-white: #FFFFFF;
-    --text-dark: #1a1a2e;
-    --text-light: #555;
+    --text-dark: #1a1a1a;
+    --text-light: #4a4a4a;
     --bg-light: #f8f9fa;
     --bg-white: #ffffff;
+    --bg-warm: #FDF6E3;
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+    --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.15);
     --radius: 12px;
     --transition: all 0.3s ease;
+    --pattern: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20 L20 0 L40 20 L20 40 Z' fill='none' stroke='%23F5A623' stroke-width='0.5' opacity='0.1'/%3E%3C/svg%3E");
 }
 
 /* === Reset === */
@@ -61,9 +63,9 @@ ul {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.98);
+    background: rgba(253, 246, 227, 0.97);
     backdrop-filter: blur(12px);
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2px 0 var(--sa-gold);
     transition: var(--transition);
 }
 
@@ -156,8 +158,9 @@ ul {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: #fafdf9;
+    background: var(--bg-warm);
     padding-top: 80px;
+    background-image: var(--pattern);
 }
 
 .hero-banner {
@@ -197,8 +200,8 @@ ul {
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 12px;
-    color: var(--ie-orange);
-    letter-spacing: 1px;
+    color: var(--sa-gold);
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
@@ -532,7 +535,8 @@ ul {
 }
 
 .section:nth-child(even) {
-    background: #f4f7f5;
+    background: var(--bg-warm);
+    background-image: var(--pattern);
 }
 
 .section-title {
@@ -540,7 +544,7 @@ ul {
     font-weight: 700;
     text-align: center;
     margin-bottom: 16px;
-    color: var(--text-dark);
+    color: var(--sa-green);
 }
 
 .section-subtitle {
@@ -577,7 +581,7 @@ ul {
     display: block;
     font-size: 2.8rem;
     font-weight: 700;
-    color: var(--sa-green);
+    color: var(--sa-gold);
     margin-bottom: 8px;
 }
 
@@ -603,6 +607,7 @@ ul {
     box-shadow: var(--shadow);
     transition: var(--transition);
     border-left: 4px solid var(--sa-green);
+    border-bottom: 2px solid rgba(27, 94, 32, 0.1);
 }
 
 .event-card:hover {
@@ -667,6 +672,7 @@ ul {
     box-shadow: var(--shadow);
     transition: var(--transition);
     border-top: 4px solid var(--sa-gold);
+    border-bottom: 2px solid rgba(245, 166, 35, 0.2);
 }
 
 .resource-card:hover {
@@ -1007,9 +1013,10 @@ a.forum-card {
 
 /* === Footer === */
 .footer {
-    background: var(--text-dark);
+    background: #0a1f12;
     color: rgba(255, 255, 255, 0.8);
     padding: 60px 0 30px;
+    border-top: 4px solid var(--sa-gold);
 }
 
 .footer-grid {
