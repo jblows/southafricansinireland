@@ -237,18 +237,22 @@ ul {
 
 /* === Rugby Banner === */
 .rugby-banner-section {
-    background: linear-gradient(135deg, #0a1f12 0%, #003320 100%);
-    padding: 60px 0;
+    position: relative;
+    padding: 80px 0;
     text-align: center;
+    overflow: hidden;
 }
 
-.rugby-banner-section img {
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-    margin-bottom: 20px;
+.rugby-banner-bg {
+    position: absolute;
+    inset: 0;
+    background: url('rugby-stadium.jpg') center/cover no-repeat;
+}
+
+.rugby-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,20,10,0.7) 0%, rgba(0,40,20,0.85) 100%);
 }
 
 .rugby-placeholder {
@@ -257,17 +261,45 @@ ul {
 
 .rugby-placeholder h2 {
     color: #FFB81C;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 12px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
 .rugby-placeholder p {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 1rem;
-    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    margin-bottom: 24px;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* === Featured Event Card with Image === */
+.event-card-featured {
+    flex-direction: column !important;
+    padding: 0 !important;
+    overflow: hidden;
+    border-left: 4px solid #FFB81C !important;
+}
+
+.event-card-featured .event-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-card-featured .event-card-body {
+    display: flex;
+    gap: 24px;
+    padding: 24px 30px;
+}
+
+@media (max-width: 768px) {
+    .event-card-featured .event-card-body {
+        flex-direction: column;
+        gap: 16px;
+    }
 }
 
 /* === Nav CTA Button === */
