@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | South Africans in Ireland</title>
+    <meta name="description" content="Learn about South Africans in Ireland — our story, mission, values, and the team behind the community.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .about-hero { background: linear-gradient(135deg, #001a0d, #003320); padding: 140px 0 60px; color: white; text-align: center; }
+        .about-hero h1 { font-size: 2.5rem; margin-bottom: 12px; }
+        .about-hero p { opacity: 0.8; font-size: 1.1rem; }
+        .about-content { max-width: 800px; margin: 0 auto; padding: 60px 24px; }
+        .about-content h2 { font-size: 1.6rem; margin: 40px 0 16px; color: var(--sa-green); }
+        .about-content p { font-size: 1rem; line-height: 1.8; color: #555; margin-bottom: 16px; }
+        .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; margin: 30px 0 50px; }
+        .value-card { background: white; border-radius: var(--radius); padding: 30px; box-shadow: var(--shadow); text-align: center; border-top: 4px solid var(--sa-gold); transition: var(--transition); }
+        .value-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+        .value-card h3 { font-size: 1.1rem; margin-bottom: 8px; color: var(--text-dark); }
+        .value-card p { font-size: 0.9rem; color: var(--text-light); margin-bottom: 0; }
+        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; margin: 30px 0; }
+        .team-card { background: white; border-radius: var(--radius); padding: 30px; box-shadow: var(--shadow); text-align: center; transition: var(--transition); }
+        .team-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+        .team-avatar { width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, var(--sa-green), var(--ie-green)); margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 700; }
+        .team-card h3 { font-size: 1rem; margin-bottom: 4px; color: var(--text-dark); }
+        .team-card p { font-size: 0.85rem; color: var(--text-light); margin-bottom: 0; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: var(--sa-green); font-weight: 600; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="logo.svg" alt="South Africans in Ireland" class="nav-logo-img"></a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#events" class="nav-link">Events</a></li>
+                <li><a href="index.html#resources" class="nav-link">Resources</a></li>
+                <li><a href="index.html#directory" class="nav-link">Directory</a></li>
+                <li><a href="forum/index.html" class="nav-link">Forum</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="emergency.html" class="nav-link">Emergency</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="about-hero">
+        <h1>About Us</h1>
+        <p>The story behind South Africans in Ireland</p>
+    </section>
+
+    <article class="about-content">
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+
+        <h2>Our Story</h2>
+        <p>South Africans in Ireland was founded in 2020 to connect the growing SA community across the Emerald Isle. What started as a WhatsApp group has grown into a community of 5,000+ members across Dublin, Cork, Galway, Limerick, and beyond.</p>
+        <p>From helping newcomers find their feet to organising braais in the park and screening every Springbok match, we've built something special — a home away from home for every South African who's made Ireland their base.</p>
+
+        <h2>Our Mission</h2>
+        <p>To support South Africans settling in Ireland, celebrate our shared heritage, and build lasting friendships across the Rainbow Nation diaspora.</p>
+
+        <h2>Our Values</h2>
+        <div class="values-grid">
+            <div class="value-card">
+                <h3>Community First</h3>
+                <p>Everything we do is for the community. No profit motive, no gatekeeping — just South Africans helping South Africans.</p>
+            </div>
+            <div class="value-card">
+                <h3>Ubuntu</h3>
+                <p>I am because we are. We believe in shared humanity and lifting each other up, no matter where in SA you're from.</p>
+            </div>
+            <div class="value-card">
+                <h3>Inclusivity</h3>
+                <p>All South Africans are welcome — every province, every language, every background. This is the Rainbow Nation abroad.</p>
+            </div>
+            <div class="value-card">
+                <h3>Braai &amp; Belonging</h3>
+                <p>Nothing brings people together like fire and food. We create spaces where you feel at home, thousands of kilometres from home.</p>
+            </div>
+        </div>
+
+        <h2>The Team</h2>
+        <p>Our community is run by volunteers who give their time to keep things running smoothly.</p>
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-avatar">CL</div>
+                <h3>Community Lead</h3>
+                <p>Overall coordination, partnerships, and community direction</p>
+            </div>
+            <div class="team-card">
+                <div class="team-avatar">EC</div>
+                <h3>Events Coordinator</h3>
+                <p>Braais, screenings, socials, and the annual SA Gathering</p>
+            </div>
+            <div class="team-card">
+                <div class="team-avatar">CC</div>
+                <h3>Cork Chapter Lead</h3>
+                <p>Building the Munster community — Cork, Limerick, and Waterford</p>
+            </div>
+            <div class="team-card">
+                <div class="team-avatar">SM</div>
+                <h3>Online &amp; Social Media</h3>
+                <p>Facebook, WhatsApp groups, website, and digital communications</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px; padding-top: 30px; border-top: 1px solid #eee;">
+            <p style="color: var(--text-light); margin-bottom: 16px;">Want to get involved? We're always looking for volunteers.</p>
+            <a href="index.html#contact" class="btn btn-primary">Get In Touch</a>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="logo.svg" alt="South Africans in Ireland" class="footer-logo-img">
+                    <p>Building community, one braai at a time.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#events">Events</a></li>
+                        <li><a href="index.html#resources">Resources</a></li>
+                        <li><a href="index.html#directory">Directory</a></li>
+                        <li><a href="forum/index.html">Forum</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html#contact">Volunteer</a></li>
+                        <li><a href="emergency.html">Emergency Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="https://www.saembassy.ie" target="_blank">SA Embassy Dublin</a></li>
+                        <li><a href="https://www.citizensinformation.ie" target="_blank">Citizens Information</a></li>
+                        <li><a href="https://www.revenue.ie" target="_blank">Revenue.ie</a></li>
+                        <li><a href="https://www.irishimmigration.ie" target="_blank">Immigration</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 South Africans in Ireland. Made with love in Dublin.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile nav toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                navToggle.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>

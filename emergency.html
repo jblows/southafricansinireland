@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Contacts | South Africans in Ireland</title>
+    <meta name="description" content="Essential emergency numbers for South Africans living in Ireland — Gardai, ambulance, SA Embassy, crisis support, and more.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .emergency-hero {
+            background: linear-gradient(135deg, #7a0000, #de3831);
+            padding: 140px 0 60px;
+            color: white;
+            text-align: center;
+        }
+        .emergency-hero h1 { font-size: 2.5rem; margin-bottom: 12px; }
+        .emergency-hero p { opacity: 0.9; font-size: 1.1rem; }
+        .emergency-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        .emergency-section {
+            margin-bottom: 50px;
+        }
+        .emergency-section h2 {
+            font-size: 1.4rem;
+            color: var(--sa-green);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--sa-gold);
+        }
+        .emergency-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+        }
+        .emergency-card {
+            background: white;
+            border-radius: var(--radius);
+            padding: 24px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-left: 4px solid var(--sa-green);
+        }
+        .emergency-card:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-2px);
+        }
+        .emergency-card.urgent {
+            border-left-color: #de3831;
+            background: #fff5f5;
+        }
+        .emergency-card h3 {
+            font-size: 1rem;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+        .emergency-card .phone {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--sa-green);
+            margin-bottom: 6px;
+            letter-spacing: 0.5px;
+        }
+        .emergency-card.urgent .phone {
+            color: #de3831;
+        }
+        .emergency-card .phone a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .emergency-card .phone a:hover {
+            text-decoration: underline;
+        }
+        .emergency-card p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin: 0;
+            line-height: 1.6;
+        }
+        .emergency-banner {
+            background: #fff3cd;
+            border: 2px solid var(--sa-gold);
+            border-radius: var(--radius);
+            padding: 20px 24px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .emergency-banner p {
+            font-size: 1rem;
+            color: var(--text-dark);
+            margin: 0;
+            font-weight: 500;
+        }
+        .emergency-banner strong {
+            color: #de3831;
+        }
+        .back-link { display: inline-block; margin-bottom: 20px; color: var(--sa-green); font-weight: 600; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="logo.svg" alt="South Africans in Ireland" class="nav-logo-img"></a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#events" class="nav-link">Events</a></li>
+                <li><a href="index.html#resources" class="nav-link">Resources</a></li>
+                <li><a href="index.html#directory" class="nav-link">Directory</a></li>
+                <li><a href="forum/index.html" class="nav-link">Forum</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="emergency-hero">
+        <h1>Emergency Contacts</h1>
+        <p>Important numbers for South Africans in Ireland — save this page</p>
+    </section>
+
+    <article class="emergency-content">
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+
+        <div class="emergency-banner">
+            <p><strong>In a life-threatening emergency, always call 112 or 999.</strong> These numbers work from any phone, even without credit.</p>
+        </div>
+
+        <!-- Emergency Services -->
+        <div class="emergency-section">
+            <h2>Emergency Services</h2>
+            <div class="emergency-grid">
+                <div class="emergency-card urgent">
+                    <h3>Emergency (Fire, Ambulance, Garda&iacute;)</h3>
+                    <div class="phone"><a href="tel:112">112</a> / <a href="tel:999">999</a></div>
+                    <p>Free from any phone. Works without SIM or credit. Available 24/7.</p>
+                </div>
+                <div class="emergency-card">
+                    <h3>Garda&iacute; (Police) — Non-Emergency</h3>
+                    <div class="phone"><a href="tel:1800666111">1800 666 111</a></div>
+                    <p>Garda Confidential Line. For non-urgent reports, concerns, or information.</p>
+                </div>
+                <div class="emergency-card">
+                    <h3>South African Embassy, Dublin</h3>
+                    <div class="phone"><a href="tel:+35316615553">+353 1 661 5553</a></div>
+                    <p>Consular assistance, passport emergencies, and support for SA citizens. Earlsfort Terrace, Dublin 2.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Crisis & Mental Health -->
+        <div class="emergency-section">
+            <h2>Crisis &amp; Mental Health Support</h2>
+            <div class="emergency-grid">
+                <div class="emergency-card urgent">
+                    <h3>Pieta House — Suicide &amp; Self-Harm</h3>
+                    <div class="phone"><a href="tel:1800247247">1800 247 247</a></div>
+                    <p>Free, 24/7 crisis counselling. No referral needed. Walk-in centres available.</p>
+                </div>
+                <div class="emergency-card urgent">
+                    <h3>Samaritans — Emotional Support</h3>
+                    <div class="phone"><a href="tel:116123">116 123</a></div>
+                    <p>Free, 24/7. Confidential listening and support. You don't have to be suicidal to call.</p>
+                </div>
+                <div class="emergency-card">
+                    <h3>Crisis Text Line</h3>
+                    <div class="phone">Text HELP to <a href="sms:50808">50808</a></div>
+                    <p>Free 24/7 text-based support. Trained volunteers. Anonymous and confidential.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Domestic Violence -->
+        <div class="emergency-section">
+            <h2>Domestic Violence</h2>
+            <div class="emergency-grid">
+                <div class="emergency-card urgent">
+                    <h3>Women's Aid — National Freephone Helpline</h3>
+                    <div class="phone"><a href="tel:1800341900">1800 341 900</a></div>
+                    <p>24/7 support for women experiencing domestic violence. Confidential, free, and non-judgemental.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Health -->
+        <div class="emergency-section">
+            <h2>Health Services</h2>
+            <div class="emergency-grid">
+                <div class="emergency-card">
+                    <h3>HSE Live — Health Information</h3>
+                    <div class="phone"><a href="tel:1800700700">1800 700 700</a></div>
+                    <p>Health advice and information. Mon-Fri 8am-8pm, Sat-Sun 9am-5pm. Free call.</p>
+                </div>
+                <div class="emergency-card">
+                    <h3>National Poisons Information Centre</h3>
+                    <div class="phone"><a href="tel:018092166">01 809 2166</a></div>
+                    <p>24/7 advice on poisoning emergencies. For healthcare professionals and the public.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Legal & Housing -->
+        <div class="emergency-section">
+            <h2>Legal &amp; Housing</h2>
+            <div class="emergency-grid">
+                <div class="emergency-card">
+                    <h3>FLAC — Free Legal Advice Centres</h3>
+                    <div class="phone"><a href="tel:1890350250">1890 350 250</a></div>
+                    <p>Free legal information and advice. Covers employment, immigration, housing, and family law.</p>
+                </div>
+                <div class="emergency-card">
+                    <h3>Threshold — Housing Advice</h3>
+                    <div class="phone"><a href="tel:1800454454">1800 454 454</a></div>
+                    <p>Free housing advice for tenants. Help with notices to quit, rent disputes, and homelessness prevention.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SA-Specific -->
+        <div class="emergency-section">
+            <h2>South Africa — Specific</h2>
+            <div class="emergency-grid">
+                <div class="emergency-card">
+                    <h3>DIRCO — Dept of International Relations</h3>
+                    <div class="phone"><a href="tel:+27123511000">+27 12 351 1000</a></div>
+                    <p>SA Department of International Relations and Cooperation. For consular emergencies when the Dublin Embassy is closed.</p>
+                </div>
+                <div class="emergency-card">
+                    <h3>SA Embassy Dublin (Repeat)</h3>
+                    <div class="phone"><a href="tel:+35316615553">+353 1 661 5553</a></div>
+                    <p>Passport renewals, emergency travel documents, notarial services, and assistance for SA nationals in distress.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px; padding: 30px; background: var(--bg-warm); border-radius: var(--radius);">
+            <p style="color: var(--text-light); margin-bottom: 8px; font-size: 0.9rem;">Information believed correct as of July 2026. If a number has changed, please let us know.</p>
+            <a href="index.html#contact" class="btn btn-primary">Report an Update</a>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="logo.svg" alt="South Africans in Ireland" class="footer-logo-img">
+                    <p>Building community, one braai at a time.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#events">Events</a></li>
+                        <li><a href="index.html#resources">Resources</a></li>
+                        <li><a href="index.html#directory">Directory</a></li>
+                        <li><a href="forum/index.html">Forum</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html#contact">Volunteer</a></li>
+                        <li><a href="emergency.html">Emergency Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="https://www.saembassy.ie" target="_blank">SA Embassy Dublin</a></li>
+                        <li><a href="https://www.citizensinformation.ie" target="_blank">Citizens Information</a></li>
+                        <li><a href="https://www.revenue.ie" target="_blank">Revenue.ie</a></li>
+                        <li><a href="https://www.irishimmigration.ie" target="_blank">Immigration</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 South Africans in Ireland. Made with love in Dublin.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile nav toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                navToggle.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>

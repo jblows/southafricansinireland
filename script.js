@@ -76,6 +76,7 @@ document.querySelectorAll('.rsvp-btn').forEach(btn => {
         const eventCard = btn.closest('.event-card');
         const eventName = eventCard.querySelector('h3').textContent;
         modalEventName.textContent = eventName;
+        document.getElementById('rsvp-event-name').value = eventName;
         rsvpModal.classList.add('active');
         document.body.style.overflow = 'hidden';
     });
@@ -134,20 +135,11 @@ listingForm.addEventListener('submit', (e) => {
     listingForm.reset();
 });
 
-// Newsletter form
-document.getElementById('newsletter-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    const input = e.target.querySelector('input');
-    alert('Thanks for subscribing! We\'ll keep you posted.');
-    input.value = '';
-});
+// Newsletter form — submitted via Formspree
+// No preventDefault needed; Formspree handles the POST
 
-// Contact form
-document.getElementById('contact-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert('Message sent! We\'ll get back to you soon.');
-    e.target.reset();
-});
+// Contact form — submitted via Formspree
+// No preventDefault needed; Formspree handles the POST
 
 // Forum card clicks
 document.querySelectorAll('#forum .forum-card').forEach(card => {
@@ -167,4 +159,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             window.scrollTo({ top: targetPosition, behavior: 'smooth' });
         }
     });
+});
+
+// Back to Top button
+const backToTopBtn = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTopBtn.classList.add('visible');
+    } else {
+        backToTopBtn.classList.remove('visible');
+    }
+});
+
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 });

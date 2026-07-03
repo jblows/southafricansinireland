@@ -3,7 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>South Africans in Ireland | southafricansinireland</title>
+    <title>South Africans in Ireland — Community, Events & Resources</title>
+    <meta name="description" content="The home of South Africans living in Ireland. Events, resources, business directory, and community forum for 5,000+ SA expats.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="South Africans in Ireland — Community, Events & Resources">
+    <meta property="og:description" content="The home of South Africans living in Ireland. Events, resources, business directory, and community forum for 5,000+ SA expats.">
+    <meta property="og:image" content="hero-banner.jpg">
+    <meta property="og:url" content="https://southafricansinireland.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="South Africans in Ireland — Community, Events & Resources">
+    <meta name="twitter:description" content="The home of South Africans living in Ireland. Events, resources, business directory, and community forum for 5,000+ SA expats.">
+    <meta name="twitter:image" content="hero-banner.jpg">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -37,7 +52,12 @@
             <img src="hero-banner.jpg" alt="South Africans in Ireland — Springbok and Leprechaun with SA and Irish flags">
         </div>
         <div class="hero-text">
-            <p class="hero-greeting">Welkom! F&aacute;ilte! Welcome! Wamkelekile! Siyakwamukela! Rea u amogela! Ndi a ni tanzela! U amukelwa! Wamukelekile! Re a u amogela! Mukelani!</p>
+            <div class="hero-greeting-ticker">
+                <div class="ticker-track">
+                    <span class="ticker-content">Welkom! &nbsp; F&aacute;ilte! &nbsp; Welcome! &nbsp; Wamkelekile! &nbsp; Siyakwamukela! &nbsp; Rea u amogela! &nbsp; Ndi a ni tanzela! &nbsp; U amukelwa! &nbsp; Wamukelekile! &nbsp; Re a u amogela! &nbsp; Mukelani! &nbsp; </span>
+                    <span class="ticker-content">Welkom! &nbsp; F&aacute;ilte! &nbsp; Welcome! &nbsp; Wamkelekile! &nbsp; Siyakwamukela! &nbsp; Rea u amogela! &nbsp; Ndi a ni tanzela! &nbsp; U amukelwa! &nbsp; Wamukelekile! &nbsp; Re a u amogela! &nbsp; Mukelani! &nbsp; </span>
+                </div>
+            </div>
             <h1>South Africans <span class="highlight-green">in Ireland</span></h1>
             <p class="hero-tagline">Connecting the Rainbow Nation across the Emerald Isle since 2020. Join 5,000+ South Africans building community together.</p>
             <div class="hero-buttons">
@@ -642,14 +662,36 @@
         </div>
     </section>
 
+    <!-- Sponsors Section -->
+    <section class="section sponsors" id="sponsors">
+        <div class="container">
+            <h2 class="section-title">Our Partners</h2>
+            <div class="sponsors-ticker">
+                <div class="sponsors-track">
+                    <span class="sponsor-logo">Uncle Bok</span>
+                    <span class="sponsor-logo">SA Gathering Ireland</span>
+                    <span class="sponsor-logo">The Lekker Network</span>
+                    <span class="sponsor-logo">EBS</span>
+                    <span class="sponsor-logo">Sable International</span>
+                    <span class="sponsor-logo">Uncle Bok</span>
+                    <span class="sponsor-logo">SA Gathering Ireland</span>
+                    <span class="sponsor-logo">The Lekker Network</span>
+                    <span class="sponsor-logo">EBS</span>
+                    <span class="sponsor-logo">Sable International</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Newsletter Section -->
     <section class="section newsletter">
         <div class="container">
             <div class="newsletter-box">
                 <h2>Stay in the Loop</h2>
                 <p>Get weekly updates on events, news, and community happenings.</p>
-                <form class="newsletter-form" id="newsletter-form">
-                    <input type="email" placeholder="Your email address" required>
+                <form class="newsletter-form" id="newsletter-form" action="https://formspree.io/f/xplaceholder" method="POST">
+                    <input type="email" name="email" placeholder="Your email address" required>
+                    <input type="hidden" name="_subject" value="New newsletter subscription">
                     <button type="submit" class="btn btn-primary">Subscribe</button>
                 </form>
                 <p class="newsletter-note">No spam. Unsubscribe anytime. We promise.</p>
@@ -664,15 +706,15 @@
             <p class="section-subtitle">Questions, suggestions, or want to volunteer? We'd love to hear from you.</p>
             <div class="contact-grid">
                 <div class="contact-form-container">
-                    <form class="contact-form" id="contact-form">
+                    <form class="contact-form" id="contact-form" action="https://formspree.io/f/xplaceholder" method="POST">
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <select required>
+                            <select name="subject" required>
                                 <option value="" disabled selected>What's this about?</option>
                                 <option value="general">General Enquiry</option>
                                 <option value="event">Event Suggestion</option>
@@ -682,7 +724,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
@@ -715,19 +757,19 @@
                 <div class="footer-col">
                     <h4>Community</h4>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Volunteer</a></li>
-                        <li><a href="#">Sponsors</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#contact">Volunteer</a></li>
+                        <li><a href="emergency.html">Emergency Contacts</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><a href="#">SA Embassy Dublin</a></li>
-                        <li><a href="#">Citizens Information</a></li>
-                        <li><a href="#">Revenue.ie</a></li>
-                        <li><a href="#">INIS Immigration</a></li>
+                        <li><a href="https://www.saembassy.ie" target="_blank">SA Embassy Dublin</a></li>
+                        <li><a href="https://www.citizensinformation.ie" target="_blank">Citizens Information</a></li>
+                        <li><a href="https://www.revenue.ie" target="_blank">Revenue.ie</a></li>
+                        <li><a href="https://www.irishimmigration.ie" target="_blank">Immigration</a></li>
                     </ul>
                 </div>
             </div>
@@ -781,14 +823,15 @@
             <h2>RSVP</h2>
             <p class="modal-event-name" id="modal-event-name"></p>
             <form class="modal-form" id="rsvp-form">
+                <input type="hidden" id="rsvp-event-name" name="event_name" value="">
                 <div class="form-group">
-                    <input type="text" id="rsvp-name" placeholder="Your Name" required>
+                    <input type="text" id="rsvp-name" name="name" placeholder="Your Name" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" id="rsvp-email" placeholder="Your Email" required>
+                    <input type="email" id="rsvp-email" name="email" placeholder="Your Email" required>
                 </div>
                 <div class="form-group">
-                    <select id="rsvp-guests">
+                    <select id="rsvp-guests" name="guests">
                         <option value="1">Just me</option>
                         <option value="2">2 people</option>
                         <option value="3">3 people</option>
@@ -800,6 +843,16 @@
             </form>
         </div>
     </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" width="28" height="28" fill="#ffffff"><path d="M16.004 0C7.165 0 .002 7.161.002 15.997c0 2.821.737 5.578 2.138 8.006L.014 32l8.19-2.148a15.91 15.91 0 007.8 2.02h.007C24.843 31.872 32 24.71 32 15.997 32 7.161 24.843 0 16.004 0zm0 29.318a13.35 13.35 0 01-6.818-1.867l-.49-.29-5.07 1.33 1.353-4.945-.318-.506A13.37 13.37 0 012.55 15.997c0-7.412 6.037-13.443 13.454-13.443 7.412 0 13.443 6.03 13.443 13.443 0 7.418-6.031 13.321-13.443 13.321zm7.38-10.07c-.405-.202-2.394-1.182-2.766-1.316-.372-.137-.642-.202-.912.203-.27.405-1.05 1.316-1.287 1.588-.237.27-.473.304-.878.101-.405-.202-1.71-.63-3.258-2.01-1.204-1.074-2.017-2.4-2.253-2.805-.237-.405-.025-.624.178-.826.183-.183.405-.473.607-.71.203-.237.27-.405.405-.675.135-.27.067-.506-.034-.71-.101-.202-.912-2.2-1.25-3.012-.33-.79-.665-.683-.912-.696-.237-.012-.507-.015-.777-.015s-.71.101-1.082.506c-.372.405-1.42 1.386-1.42 3.38 0 1.993 1.455 3.92 1.657 4.19.203.27 2.862 4.37 6.935 6.129.97.418 1.726.668 2.316.855.973.31 1.858.265 2.558.16.78-.116 2.394-.978 2.732-1.922.338-.945.338-1.755.237-1.922-.101-.169-.372-.27-.777-.473z"/></svg>
+    </a>
 
     <script src="script.js"></script>
 </body>
