@@ -941,9 +941,11 @@ a.forum-card {
 /* === Contact === */
 .contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 50px;
     align-items: start;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .contact-form .form-group {
