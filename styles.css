@@ -805,6 +805,21 @@ ul {
     font-weight: 500;
 }
 
+.directory-website {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--sa-green);
+    font-weight: 500;
+    margin-top: 8px;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.directory-website:hover {
+    text-decoration: underline;
+    color: #005c3a;
+}
+
 .directory-cta {
     text-align: center;
     margin-top: 40px;
